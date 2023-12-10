@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--<div class="container">
+    <div id="colContainer" class="row test">
+        
+    </div>
+</div>-->
+
+<div class="container my-2">
+    <h1 class="lead fw-bolder text-center">Add Product</h1>
+
+<label for="Name" class="text-muted" >productName :</label>
+<input type="text" class="form-control my-2" id="productName"/>
+
+<label for="Name" class="text-muted" >productPrice :</label>
+<input type="number" class="form-control my-2" id="productPrice"/>
+
+<label for="Name" class="text-muted" >productCategory :</label>
+<input type="text" class="form-control my-2" id="productCategory"/>
+
+<label for="Name" class="text-muted" >productDescription :</label>
+<textarea type="text" class="form-control my-2" id="productDescription"></textarea>
+
+<button onclick="addProduct()" class="btn btn-primary  my-3 d-block" id="addBtn">Add Product</button>
+<button onclick="sendUpdate()" class="btn btn-info  my-3 d-none" id="updateBtn">Update Product</button>
+
+<input type="text" placeholder="search by name..." oninput="searchProducts(this.value)" class="form-control w-75 mx-auto my-3">
+
+<table class="table table-striped">
+    <thead>
+        <th>productName</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Desc</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </thead>
+
+    <tbody id="tBody">
+
+    </tbody>
+
+</table>
+
+</div>
+
+
+
+
+  
+<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
